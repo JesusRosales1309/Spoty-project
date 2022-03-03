@@ -65,7 +65,6 @@ numpy==1.22.2
 openpyxl==3.0.9
 packaging==21.3
 pandas==1.4.0
-pandas-profiling==3.1.0
 pandocfilters==1.5.0
 parso==0.8.3
 pathspec==0.9.0

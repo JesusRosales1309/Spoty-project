@@ -53,23 +53,6 @@ Project Organization
   
  </td>                                                                                                                                     
  </tr>
- <tr>
- <td>Juego de volados</td>
- <td>Row 2 Data Column 3</td>
- <td>Row 2 Data Column 4</td>
- </tr>
- </tr>
- <tr>
- <td>Row 3 Data Column 2</td>
- <td>Row 3 Data Column 3</td>
- <td>Row 3 Data Column 4</td>
- </tr>
- </tr>
- <tr>
- <td>Row 4 Data Column 2</td>
- <td>Row 4 Data Column 3</td>
- <td>Row 4 Data Column 4</td>
- </tr>
 </table>
 
 

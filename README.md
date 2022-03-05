@@ -29,10 +29,7 @@ Project Organization
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt
-    │
-    │   
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+ 
 
 
 --------

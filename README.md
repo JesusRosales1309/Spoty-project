@@ -49,8 +49,8 @@ Project Organization
   <a href="https://drive.google.com/file/d/1OY7YgabsYYM8LNiH8IOCOHS0z6JNlIh8/view?usp=sharing" rel="external">ProyectoSpotify.pdf</a>
  </td>
   <td>
-   <a href="notebooks/Todo_en_uno.ipynb" target="_parent"><img src="https://camo.githubusercontent.com/52feade06f2fecbf006889a904d221e6a730c194/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg"></a>
-  
+  <a href="notebooks/Todo_en_uno.ipynb" rel="external">ProyectoSpotify(Notebook)</a>
+
  </td>                                                                                                                                     
  </tr>
 </table>

@@ -15,7 +15,7 @@ client_credentials_manager = SpotifyClientCredentials(client_id="e3aa2b0ba2664fc
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 global saved_pipeline 
-saved_pipeline = load('../notebooks/song_streams.model')
+saved_pipeline = load('../data/raw/song_streams.model')
 
 
 def predict_streams(uri):

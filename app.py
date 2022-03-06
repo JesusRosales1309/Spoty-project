@@ -213,7 +213,7 @@ st.markdown(
     Al desplegar el codigo deberías ver los siguientes datos:
     """
 )
-data=pd.read_parquet('../data/processed/StreamsfeaturesModel.parquet')
+data=pd.read_parquet('data/processed/StreamsfeaturesModel.parquet')
 st.dataframe(data)
 
 st.markdown(
@@ -263,7 +263,7 @@ st.markdown(
     Al desplegar el pipeline se debería ver ver así:
     """
 )
-image = Image.open('../reports/figures/pipeline.png')
+image = Image.open('reports/figures/pipeline.png')
 st.image(image, caption='Pipeline',use_column_width=True)  
 
 st.subheader('Grafica de datos Reales vs predichos')
@@ -275,7 +275,7 @@ st.markdown(
     una linea recta sin embargo es normal ver los datos algo dispersos ya que el modelo no pretende ser perfecto.
     """
 )
-image = Image.open('../reports/figures/actvspred.png')
+image = Image.open('reports/figures/actvspred.png')
 st.image(image)
 st.subheader('Interpretación de los estimadores')
 

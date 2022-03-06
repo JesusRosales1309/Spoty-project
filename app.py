@@ -25,7 +25,7 @@ def predict_streams(uri):
 
 st.title("Factores de éxito en canciones para ser tendencia en México 2021")
 
-#df=pd.read_parquet('data/processed/Streamsfeatures.parquet')
+df=pd.read_parquet('data/processed/Streamsfeatures.parquet')
 
 st.subheader('Introducción')
 st.markdown(
@@ -132,7 +132,7 @@ st.markdown(
     Al desplegar el mapa deberías ver lo siguiente:
     """
 )
-image = Image.open('../reports/figures/CorrelationMap.png')
+image = Image.open('reports/figures/CorrelationMap.png')
 st.image(image, caption='Mapa de correlación')
 
 st.subheader('Analizando tendencias')

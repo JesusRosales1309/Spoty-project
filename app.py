@@ -213,7 +213,7 @@ st.markdown(
     Al desplegar el codigo deberías ver los siguientes datos:
     """
 )
-data=pd.read_parquet('C:../data/processed/StreamsfeaturesModel.parquet')
+data=pd.read_parquet('../data/processed/StreamsfeaturesModel.parquet')
 st.dataframe(data)
 
 st.markdown(

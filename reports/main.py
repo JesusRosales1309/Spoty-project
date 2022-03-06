@@ -102,10 +102,10 @@ def main():
         Al desplegar el reporte deberías ver lo siguiente:
         """
     )
-    HtmlFile = open("SWEETVIZ_REPORT.html", 'r')
-    source_code = HtmlFile.read() 
+    #HtmlFile = open("SWEETVIZ_REPORT.html", 'r')
+    #source_code = HtmlFile.read() 
     #print(source_code)
-    components.html(source_code,height=600,scrolling=True)
+    #components.html(source_code,height=600,scrolling=True)
 
 
     st.subheader('ANALISIS DE CORRELACION')

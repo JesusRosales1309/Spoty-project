@@ -13,7 +13,7 @@ client_credentials_manager = SpotifyClientCredentials(client_id="e3aa2b0ba2664fc
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 global saved_pipeline 
-streams_model= open('../data/processed/song_streams.model')
+streams_model= open('data/processed/song_streams.model')
 saved_pipeline =joblib.load(streams_model)
 
 

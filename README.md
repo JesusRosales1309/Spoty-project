@@ -1,7 +1,6 @@
 Spoty Project
 ==============================
-
-Analisis de canciones para crear un modelo que permita identificar tendencias.
+(https://github.com/JesusRosales1309/Spoty-project/blob/main/reports/figures/Portada.png?raw=true)
 
 Project Organization
 ------------

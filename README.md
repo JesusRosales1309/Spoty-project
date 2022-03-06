@@ -1,6 +1,6 @@
 Spoty Project
 ==============================
-(https://github.com/JesusRosales1309/Spoty-project/blob/main/reports/figures/Portada.png)
+<img src="https://github.com/JesusRosales1309/Spoty-project/blob/main/reports/figures/Portada.png">
 
 Project Organization
 ------------

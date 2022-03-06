@@ -18,14 +18,16 @@ Project Organization
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks.
+    │    └──todo_en_uno    <- All the poject in one jupyter notebook.                     
+    │                         
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    │──app.py              <- streamlit app
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt
@@ -41,17 +43,19 @@ Project Organization
  <tr>
  <th>Tema</th>
  <th>PDF</th>
- <th>Link</th>
+ <th>Notebook</th>
+ <th>Pagina_web</th>    
  </tr>
  <tr>
- <td>ProyectoSpotify.pdf</td>
+ <td>ProyectoSpotify</td>
  <td>
   <a href="https://drive.google.com/file/d/1OY7YgabsYYM8LNiH8IOCOHS0z6JNlIh8/view?usp=sharing" rel="external">ProyectoSpotify.pdf</a>
  </td>
   <td>
   <a href="notebooks/Todo_en_uno.ipynb" rel="external">ProyectoSpotify(Notebook)</a>
-
- </td>                                                                                                                                     
+ </td>                                                                                                                                   <td>
+  <a href="https://share.streamlit.io/jesusrosales1309/spoty-project/main/app.py" rel="external">Spotify_Streamlit_app</a>
+ </td>  
  </tr>
 </table>
 

@@ -322,6 +322,6 @@ st.write('La uri se obtiene de spotify')
 uri=st.text_input("Inserta la Uri, ejemplo: spotify:track:7EUvcSFkyVB73zrblhQmEL","Type Here")
 if st.button("Predict"):
     st.markdown(predict_streams(uri))
-    st.markdown("equivalente a:")
-    st.markdown(np.exp(predict_streams(uri)))   
+    st.markdown("equivalente a aproximadamente:")
+    st.markdown(np.floor(np.exp(predict_streams(uri))))   
     st.markdown("Reproducciones.")

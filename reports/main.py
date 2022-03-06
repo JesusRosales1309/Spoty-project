@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 import streamlit.components.v1 as components
 from numpy import squeeze
-from joblib import load
+import joblib
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 client_credentials_manager = SpotifyClientCredentials(client_id="e3aa2b0ba2664fc384f7081a2121f66c",
@@ -13,7 +13,8 @@ client_credentials_manager = SpotifyClientCredentials(client_id="e3aa2b0ba2664fc
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 global saved_pipeline 
-saved_pipeline = load('../data/raw/song_streams.model')
+streams_model= open("../data/raw/song_streams.model")
+saved_pipeline =joblib.load(streams_model)
 
 
 def predict_streams(uri):

@@ -63,7 +63,7 @@ st.markdown(
     Al desplegar los datos deberías ver una tabla como la siguiente:
     """
 )
-data=pd.read_csv('../data/interim/datos_sum.csv')
+data=pd.read_csv('data/interim/datos_sum.csv')
 st.dataframe(data)
 st.markdown(
     """    

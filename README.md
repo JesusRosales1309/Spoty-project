@@ -43,7 +43,8 @@ Project Organization
  <tr>
  <th>Tema</th>
  <th>PDF</th>
- <th>Link</th>
+ <th>Notebook</th>
+ <th>Pagina_web</th>    
  </tr>
  <tr>
  <td>ProyectoSpotify</td>

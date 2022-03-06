@@ -25,7 +25,7 @@ def predict_streams(uri):
 def main():
     st.title("Factores de éxito en canciones para ser tendencia en México 2021")
 
-    df=pd.read_parquet('data/processed/Streamsfeatures.parquet')
+    #df=pd.read_parquet('data/processed/Streamsfeatures.parquet')
 
     st.subheader('Introducción')
     st.markdown(

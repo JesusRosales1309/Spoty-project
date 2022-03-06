@@ -78,7 +78,7 @@ st.markdown(
     Al desplegar los datos deberías ver una tabla como la siguiente:
     """
     )
-data=pd.read_parquet('../data/processed/Streamsfeatures.parquet')
+data=pd.read_parquet('data/processed/Streamsfeatures.parquet')
 st.dataframe(data)
 
 st.subheader('Análisis exploratorio de datos')

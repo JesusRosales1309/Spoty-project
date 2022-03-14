@@ -38,7 +38,7 @@ st.markdown(
 
     ***¿Será posible explicar el número de reproducciones de una canción por medio de estas variables?***.
     
-    Para responder a esta se propuso un modelo de regresión lineal múltiple, motivado en explicar el número de reproducciones de una canción durante el año 2020 en México. No obstante, el procedimiento permite repetirlo en cualquier tiempo deseado.
+    Para responder a esta se propuso un modelo de regresión lineal múltiple, motivado en explicar el número de reproducciones de una canción durante el año 2021 en México. No obstante, el procedimiento permite repetirlo en cualquier tiempo deseado.
     """
 )
 
@@ -48,8 +48,8 @@ st.markdown(
     """
     Los datos utilizados provienen de dos fuentes distintas:
     La fuente charts.spotify.com contiene las canciones más escuchadas semanalmente en México,
-    proporcionándonos como muestra los datos del 01/05/2020 hasta 01/10/2020 por lo tanto nuestra muestra
-    estaba compuesta por más de 4000 datos.
+    proporcionándonos como muestra los datos del 11/03/2021 hasta 02/09/2021 por lo tanto nuestra muestra
+    estaba compuesta por más de 5000 datos.
 
     Por medio de un programa en Python permitió conocer las canciones que se mostraban
     repetidas disminuyendo nuestra muestra aproximadamente a 400 canciones.
@@ -305,7 +305,7 @@ st.markdown(
     ```
     """
 )
-st.latex(r'''R^2\approx0.399''')
+st.latex(r'''R^2\approx0.0399''')
 
 st.markdown(
     """

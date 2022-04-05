@@ -43,7 +43,8 @@ Project Organization
  <th>Tema</th>
  <th>PDF</th>
  <th>Notebook</th>
- <th>Pagina_web</th>    
+ <th>Pagina_web</th> 
+ <th>Studio_Lab</th>
  </tr>
  <tr>
  <td>ProyectoSpotify</td>
@@ -52,9 +53,14 @@ Project Organization
  </td>
   <td>
   <a href="notebooks/Todo_en_uno.ipynb" rel="external">ProyectoSpotify(Notebook)</a>
- </td>                                                                                                                                   <td>
+ </td>                                                                                                                        <td>
   <a href="https://share.streamlit.io/jesusrosales1309/spoty-project/main/app.py" rel="external">Spotify_Streamlit_app</a>
- </td>  
+ </td> 
+ <td>
+  <a href="https://studiolab.sagemaker.aws/import/github/https://github.com/JesusRosales1309/Spoty   project/blob/main/notebooks/to/Todo_en_uno.ipynb">
+  <img src="https://studiolab.sagemaker.aws/studiolab.svg" alt="Open In SageMaker Studio Lab"/>
+</a>   
+ </td>
  </tr>
 </table>
 

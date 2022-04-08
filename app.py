@@ -67,7 +67,7 @@ st.dataframe(data)
 st.markdown(
     """    
     Con el identificador de las canciones(uri) y la Api de Spotify adquirimos las características de estas junto con
-    el programa spoti.py desarrollado por el equipo, así logrando juntar todo en un mismo archivo(figura 2.1).
+    el programa spoti.py desarrollado por el equipo, así logrando juntar todo en un mismo archivo.
     
     Los datos pueden ser cargados utilizando pandas con las líneas:
     ```python
@@ -84,7 +84,7 @@ st.subheader('Análisis exploratorio de datos')
 
 st.markdown(
     """
-    Ya con los datos realize una visualizacion general de los datos por medio de la libreria sweetviz:
+    Ya con los datos realice una visualización general de los datos por medio de la librería sweetviz:
     ```python
     import sweetviz as sv
     import pandas as pd
@@ -107,7 +107,7 @@ print(source_code)
 components.html(source_code,height=600,scrolling=True)
 
 
-st.subheader('ANALISIS DE CORRELACION')
+st.subheader('ANÁLISIS DE CORRELACIÓN')
 st.markdown(
     """
     Para encontrar las variables adecuadas y relevantes en nuestro modelo obtenemos la correlación de estas
@@ -137,8 +137,8 @@ st.image(image, caption='Mapa de correlación')
 st.subheader('Analizando tendencias')
 st.markdown(
     """
-    Realize visualizacion de los datos en altair para ver si existen cierta tendencia en los datos
-    antes de implementar el modelo de regresion multiple con el siguiente codigo y similar para las otras graficas:.
+    Realice visualización de los datos en altair para ver si existen cierta tendencia en los datos
+    antes de implementar el modelo de regresión múltiple con el siguiente código y similar para las otras graficas:
     ```python
     import pandas as pd 
     import altair as alt
@@ -183,9 +183,9 @@ st.altair_chart(c,use_container_width=True)
 st.markdown(
     """
     Se observa que en algunas variables hay cierta tendencia 
-    ya que a mayor reproducciones las caracteristicas tienden 
-    a estar mas a la derecha, entonces procedí a proponer modelos 
-    de regresión múltiple y me quede con el siguiente modelo:
+    ya que a mayores reproducciones las características tienden 
+    a estar más a la derecha, entonces procedí a proponer modelos 
+    de regresión múltiple y me quedé con el siguiente modelo:
     """
 )
 st.latex(r'''ln(Streams)=\beta_0+\beta_2\ ln(Duration-ms)+\beta_2\ (Loudness)+u ''')
@@ -195,10 +195,10 @@ st.subheader('Escalamiento de datos')
 st.markdown(
     """
     En este caso por propiedad de la regresión se pueden cambiar las unidades 
-    de medición y por eso decidi aplicar el logaritmo a la columna 'streams'
+    de medición y por eso decidí aplicar el logaritmo a la columna 'streams'
     y 'duration_ms' ya que acorta las distancias y los cambios se ven porcentualmente.
 
-    Antes de crear el pipeline y entrenar el modelo cambie la columna streams por logstreams con el siguiente codigo:
+    Antes de crear el pipeline y entrenar el modelo cambie la columna streams por logstreams con el siguiente código:
     ```python
     from sklearn.model_selection import train_test_split
     import pandas as pd 
@@ -209,7 +209,7 @@ st.markdown(
     #si no estas en notebook: print(songs)
     songs
     ```
-    Al desplegar el codigo deberías ver los siguientes datos:
+    Al desplegar el código deberías ver los siguientes datos:
     """
 )
 data=pd.read_parquet('data/processed/StreamsfeaturesModel.parquet')
@@ -217,7 +217,7 @@ st.dataframe(data)
 
 st.markdown(
     """
-    Ya en el pipeline se cambia la columna 'duration_ms' por medio del codigo:
+    Ya en el pipeline se cambia la columna 'duration_ms' por medio del código:
     
     ```python
     from sklearn.preprocessing import FunctionTransformer
@@ -228,7 +228,7 @@ st.markdown(
     ('log_encoding',transformer, ["duration_ms"])
     ]) 
     ```
-    Despues solo se deja pasar la columna loudness
+    Después solo se deja pasar la columna loudness
     ```python
     #Just pass loudness
     passthrough= ColumnTransformer ([
@@ -249,7 +249,7 @@ st.markdown(
         )
     ])
     ```
-    Agregando la regresion lineal
+    Agregando la regresión lineal
     
     ```python
     from sklearn.linear_model import LinearRegression
@@ -269,9 +269,9 @@ st.subheader('Grafica de datos Reales vs predichos')
 
 st.markdown(
     """
-    Ya entrenado el modelo pasé a revisar el modelo por medio de la siguiente grafica:
-    Visualizando la grafica de valores reales vs predichos. Lo mejor seria que se visualizara
-    una linea recta sin embargo es normal ver los datos algo dispersos ya que el modelo no pretende ser perfecto.
+    Ya entrenado el modelo pasé a revisar el modelo por medio de la siguiente gráfica:
+    Visualizando la gráfica de valores reales vs predichos. Lo mejor sería que se visualizara
+    una línea recta sin embargo es normal ver los datos algo dispersos ya que el modelo no pretende ser perfecto.
     """
 )
 image = Image.open('reports/figures/actvspred.png')
@@ -280,7 +280,7 @@ st.subheader('Interpretación de los estimadores')
 
 st.markdown(
     """
-    Teniendo el modelo entrenado se obtienen los estimadores con el siguiente codigo
+    Teniendo el modelo entrenado se obtienen los estimadores con el siguiente código
     ```python
     print("coeficientes de la regresion:B1=",lr.coef_[0],"B2=",lr.coef_[1],"B0:",lr.intercept_)
     ```
@@ -316,7 +316,7 @@ st.markdown(
 )
 
 
-st.write('Prediccion con escalamiento a logaritmo:')
+st.write('Predicción con escalamiento a logaritmo:')
 st.write('La uri se obtiene de spotify')
 
 uri=st.text_input("Inserta la Uri, ejemplo: spotify:track:7EUvcSFkyVB73zrblhQmEL","Type Here")
